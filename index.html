@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="main-div">
+    <div class="main-container">
+      <h1>Grade Calculator</h1>
+
+      <form>
+        <div class="adding">
+          <label for="course">Course:</label>
+          <input type="text" id="course" name="course" required>
+
+          <label for="weight">Weight:</label>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <input type="number" id="weight" name="weight" min="0" max="1" step="0.1" value="0.5" required>
+            <button type="button" id="add-course-btn">+ Add Course</button>
+          </div>
+        </div>
+
+
+        <div class="main-info">
+          <h3>Course Item</h3>
+          <h3>Worth %</h3>
+          <h3>Your Mark %</h3>
+          <h3>% of Course Mark</h3>
+        </div>
+
+        <div id="course-items-container">
+          <div class="course-item">
+            <input type="text" name="item" required>
+            <input type="number" name="worth" required>
+            <input type="number" name="grade" required>
+            <input type="number" name="percent" required>
+          </div>
+        </div>
+        
+
+        <button type="button" class="add-item-btn" id="add-item-btns">+ Add Item</button>
+      </form>
+
+      <div class="calculations">
+        <h3>Current Mark</h3>
+        <h3>Worth %</h3>
+        <h3>Your Mark %</h3>
+        <h3>% of Course Mark</h3>
+      </div>
+
+      <div class="calculation-values">
+        <div id="current-mark"></div>
+        <div class="value-box" id="value-worth">0%</div>
+        <div class="value-box" id="value-mark">0%</div>
+        <div class="value-box" id="value-course-mark">0%</div>
+      </div>
+
+      <div class="final-grade">
+        <h3>Final Exam Worth:</h3>
+        <div id="final-worth">0%</div>
+      </div>
+
+      <h3>required % on the final</h3>
+      <div class="final-calculations">
+        <div><h3>to finish with a 50%</h3><div id="goal-50">0%</div></div>
+        <div><h3>to finish with a 60%</h3><div id="goal-60">0%</div></div>
+        <div><h3>to finish with a 70%</h3><div id="goal-70">0%</div></div>
+        <div><h3>to finish with a 80%</h3><div id="goal-80">0%</div></div>
+        <div><h3>to finish with a 90%</h3><div id="goal-90">0%</div></div>
+        <div><h3>to finish with a 100%</h3><div id="goal-100">0%</div></div>
+      </div>
+
+      <button type="button" class="remove-course-btn">× Remove Course</button>
+    
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+
+
+
+</body>
+</html>
