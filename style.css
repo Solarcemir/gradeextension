@@ -64,6 +64,13 @@ form {
   gap: 25px;
 }
 
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .adding {
   display: flex;
   flex-direction: column;
@@ -124,6 +131,18 @@ form {
   background: linear-gradient(90deg, #a375e7, #ff73fa);
 }
 
+/* Chart Styles */
+.chart-container {
+  width: 400px;
+  height: 400px;
+  background-color: #363a40;
+  border: 1px solid #40444b;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(142, 91, 226, 0.1);
+  margin-right: 6%;
+}
+
 /* Course List */
 #courses-list {
   display: flex;
@@ -137,7 +156,7 @@ form {
   color: #ffffff;
   padding: 10px 18px;
   border-radius: 8px;
-  margin-top: 10%;
+  margin-top: 2%;
   cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
@@ -185,7 +204,7 @@ form {
   background-color: #363a40;
   border: 2px solid #40444b;
   border-radius: 8px;
-  color: #ffffff;
+  color: #fffefe;
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -314,7 +333,6 @@ form {
   gap: 25px;
 }
 
-
 .final-calculations div h3 {
   margin: 0;
   font-size: 1rem;
@@ -352,10 +370,68 @@ form {
   background: linear-gradient(90deg, #a375e7, #ff73fa);
 }
 
-
 .percentage-div {
   outline: none;
   border-color: #6200ff;
   box-shadow: 0 0 10px rgba(142, 91, 226, 0.3);
   width: 51%;
+}
+
+
+
+.extra-content {
+  position: absolute;
+  bottom: 370px; 
+  right: 240px; /* Adjust based on red square position */
+  width: 200px; /* Matches pie chart width */
+  height: 200px; /* Matches pie chart height */
+  background-color: #1469e900;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10; /* Ensures it stays above other content if overlapping */
+}
+
+.extra-content h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #94d0f8;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding:5px;
+}
+
+.extra-content div {
+  font-size: 1rem;
+  font-weight: 600;;
+
+
+}
+
+
+
+.modes-btn {
+  background: linear-gradient(90deg, #8d7ea7, #a375e7);
+  color: #ffffff;
+  border: none;
+  float: right;
+  margin-right: 60px;
+  border-radius: 8px;
+  padding: 12px 22px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.modes-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(142, 91, 226, 0.4);
+  background: linear-gradient(90deg, #a375e7, #ff73fa);
 }
